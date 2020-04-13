@@ -1,0 +1,21 @@
+using System;
+using System.Globalization;
+
+namespace calculo_salario{
+    class Program    {
+        static void Main(string[] args)        {
+
+            int numero, horas;
+            double valorHora, salario;
+
+            numero = int.Parse(Console.ReadLine());
+            horas = int.Parse(Console.ReadLine());
+            valorHora = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            salario = valorHora * horas;
+
+            Console.WriteLine("NUMERO = " + numero);
+            Console.WriteLine("SALARIO = R$ " + salario.ToString("F2", CultureInfo.InvariantCulture));
+        }
+    }
+}
