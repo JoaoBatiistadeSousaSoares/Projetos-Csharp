@@ -1,9 +1,9 @@
 using System;
 using System.Globalization;
 
-namespace URI_1002{
-    class Program    {
-        static void Main(string[] args)        {
+namespace Calculo_Circulo{
+    class Program{
+        static void Main(string[] args){
 
             double A, R, N = 3.14159;
 
