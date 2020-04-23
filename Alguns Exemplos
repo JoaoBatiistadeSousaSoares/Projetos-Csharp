@@ -1,0 +1,318 @@
+1 exemplo 
+
+using System;
+using System.Globalization;
+
+namespace segundo_programa {
+    class Program {
+        static void Main(string[] args) {
+            
+            int x, y;
+
+            x = 5;
+
+            y = 2 * x;
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+
+            Console.ReadLine();
+        }
+    }
+}
+
+2 exemplo 
+
+using System;
+using System.Globalization;
+
+namespace segundo_programa {
+    class Program {
+        static void Main(string[] args) {
+            
+            int x, y;
+
+            x = 5;
+
+            y = 2 * x;
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+
+            Console.ReadLine();
+        }
+    }
+}
+
+
+2 Exemplo 
+
+using System;
+using System.Globalization;
+
+namespace segundo_programa {
+    class Program {
+        static void Main(string[] args) {
+            
+            int x;
+            double y;
+            
+            x = 5;
+
+            y = 2 * x;
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+
+            Console.ReadLine();
+        }
+    }
+}
+
+
+3 exemplo expressão aritimetica
+
+area = (b + B) / 2.0 * h
+
+using System;
+using System.Globalization;
+
+namespace segundo_programa {
+    class Program {
+        static void Main(string[] args) {
+            
+            double b, B, h, area;
+            
+            b = 6.0;
+            B = 8.0;
+            h = 5.0;
+
+            area = (b + B) / 2.0 * h;
+
+            Console.WriteLine(area);
+           
+            Console.ReadLine();
+        }
+    }
+}
+
+4 exemplo 
+
+using System;
+using System.Globalization;
+
+namespace segundo_programa {
+    class Program {
+        static void Main(string[] args) {
+
+            int a, b;
+            double resultado;
+            
+            a = 5;
+            b = 2;
+
+            resultado = a / b;
+
+            Console.WriteLine(resultado);
+           
+            Console.ReadLine();
+        }
+    }
+}
+
+5 exemplo 
+
+
+
+using System;
+using System.Globalization;
+
+namespace segundo_programa {
+    class Program {
+        static void Main(string[] args) {
+
+            int a, b;
+            double resultado;
+            
+            a = 5;
+            b = 2;
+
+            resultado = (double) a / b;
+
+            Console.WriteLine(resultado);
+           
+            Console.ReadLine();
+        }
+    }
+}
+
+6 exemplo 
+
+using System;
+using System.Globalization;
+
+namespace segundo_programa {
+    class Program {
+        static void Main(string[] args) {
+
+            double a;
+            int b;
+
+            a = 5.0;
+            b = a;
+
+            Console.WriteLine(b);
+           
+            Console.ReadLine();
+        }
+    }
+}
+
+casting 
+
+using System;
+using System.Globalization;
+
+namespace segundo_programa {
+    class Program {
+        static void Main(string[] args) {
+
+            double a;
+            int b;
+
+            a = 5.0;
+            b = (int) a; ----------casting 
+
+            Console.WriteLine(b);
+           
+            Console.ReadLine();
+        }
+    }
+}
+
+
+7 exemplo Entrada de Dados em c#
+
+using System;
+using System.Globalization;
+
+namespace terceiro_programa{
+    class Program{
+        static void Main(string[] args){
+
+            string x;
+            int y;
+            double z;
+            char w;
+
+            x = Console.ReadLine();
+            y = int.Parse(Console.ReadLine());
+            z = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            w = char.Parse(Console.ReadLine());
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z.ToString(CultureInfo.InvariantCulture));
+            Console.WriteLine(w);
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+8 exemplo - Para ver varios dados na mesma linha
+
+using System;
+using System.Globalization;
+
+namespace terceiro_programa{
+    class Program{
+        static void Main(string[] args){
+
+            string x;
+            int y;
+            double z;
+
+            string[] vet = Console.ReadLine().Split(" ");  
+
+            x = vet[0];
+            y = int.Parse(vet[1]);
+            z = double.Parse(vet[2], CultureInfo.InvariantCulture);
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z.ToString(CultureInfo.InvariantCulture));
+      
+            Console.ReadLine();
+
+        }
+    }
+}
+
+using System;
+using System.Globalization;
+
+namespace quarto_programa{
+        class Program    {
+        static void Main(string[] args) {
+
+            double x = 3.0;
+            double y = 4.0;
+            double z = -5.0;
+            double A, B, C;
+
+            A = Math.Sqrt(x); -----raiz quadrada------
+            B = Math.Sqrt(y);
+            C = Math.Sqrt(25.0);
+
+            Console.WriteLine("Raiz quadrada de " + x + " = " + A);
+            Console.WriteLine("Raiz quadrada de " + x + " = " + B);
+            Console.WriteLine("Raiz quadrada de 25 = " + C);
+
+            A = Math.Pow(x, y);  ----------potnciação (elevado) ------
+            B = Math.Pow(x, 2.0);
+            C = Math.Pow(5.0, 2.0);
+
+            Console.WriteLine(x + " elevado a " + y + " = " + A);
+            Console.WriteLine(x + " elevado ao quadrado = " + B);
+            Console.WriteLine(" 5 elevado ao quadrado = " + C);
+
+            A = Math.Abs(y);  ---------- Valor absoluto-------------
+            B = Math.Abs(z);
+            Console.WriteLine(" Valor absoluto de " + y + " = " + A);
+            Console.WriteLine(" Valor absoluto de " + z + " = " + B);
+
+            Console.ReadLine();
+        }
+    }  
+}
+
+
+using System;
+using System.Globalization;
+
+namespace Estrutura_Sequencial{
+    class Program    {
+        static void Main(string[] args)        {
+
+            double largura, comprimento, precoMetroQaudrado, area, preco;
+
+            largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            comprimento = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            precoMetroQaudrado = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            area = largura * comprimento;
+            preco = area * precoMetroQaudrado;
+
+
+            Console.WriteLine("AREA = " + area.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("PRECO = " + preco.ToString("F2", CultureInfo.InvariantCulture));
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
